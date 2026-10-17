@@ -1,0 +1,5 @@
+to_int(plus(two)(three)) = 5
+to_int(plus(zero)(three)) = 3
+to_int(plus(three)(zero)) = 3
+to_int(plus(zero)(zero)) = 0
+Проверки: 6 assert, включая нечисловое применение f, успешно.

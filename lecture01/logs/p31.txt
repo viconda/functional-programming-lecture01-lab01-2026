@@ -1,0 +1,4 @@
+f(5) = 25
+operations(-3) = [9, -27, 3]
+apply_twice(square, 3) = 81
+Проверки: 4 assert, успешно.
