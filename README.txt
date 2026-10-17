@@ -63,7 +63,7 @@ impure_examples.py и scholarship_original.py сохраняют исследу�
 
 GIT
 Личный репозиторий: https://github.com/viconda/functional-programming-lecture01-lab01-2026
-Репозиторий закрытый; код, отчёты и история также находятся в архиве.
+Репозиторий публичный; код, отчёты и история также находятся в архиве.
 Для восстановления Git-истории из bundle:
     git clone repository.bundle restored-project
     git -C restored-project log --oneline
