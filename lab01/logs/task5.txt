@@ -1,0 +1,14 @@
+ЗАДАНИЕ 5. Эвристическая проверка исходных f1–f8
+Функция   deterministic   args_unchanged
+f1        True            True
+f2        False           True
+f3        True            False
+f4        True            True
+f5        True            True
+f6        False           True
+f7        True            True
+  Отдельно замечен stdout: 'Привет, Алия\nПривет, Алия\nПривет, Алия\n'
+f8        True            True
+f4, f7, f8 прошли эвристику, но ручной анализ выявляет нечистоту.
+Проверка алиаса результата выявила изменение: False/True.
+Проверки assert: 7/7 успешно.

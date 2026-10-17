@@ -1,0 +1,31 @@
+Проверка выполнена Python 3.12 из подготовленного виртуального окружения.
+
+python -X utf8 run_all.py
+Все восемь программ завершились с exit code 0.
+Выполнены 104 assert: task1 17, task2 13, task3 22, task4 19,
+task5 7, scholarship 11, church 15.
+Полные фактические выводы сохранены в logs/ и lab_code_notes.json.
+Восьмая программа scholarship_original.py воспроизводит исходный нечистый
+пример преподавателя; семь наборов проверок и104 assert решений сохранены.
+
+python -m pytest -q -p no:cacheprovider task1.py task2.py task3.py task4.py task5.py scholarship.py church.py
+7 passed in 0.14s
+
+После добавления test_all.py проверен стандартный сбор из родительского каталога:
+python -m pytest -q -p no:cacheprovider lab01
+7 passed in 0.04s
+
+python -m mypy --cache-dir .mypy_cache task1.py task2.py task3.py task4.py task5.py scholarship.py church.py
+Success: no issues found in 7 source files
+
+python -m ruff check --no-cache .
+All checks passed!
+
+python -m ruff format --check --no-cache .
+9 files already formatted
+
+impure_examples.py и scholarship_original.py содержат буквальный код преподавателя.
+Они намеренно исключены из проверки стиля; изменяемые globals здесь необходимы
+для исследования поставленного задания, а не являются частью чистого решения.
+В ruff.toml только для church.py отключено E731: условие прямо требует lambda.
+Длина строки форматтера88; сообщения E501 отключены для читаемости строк текста.
