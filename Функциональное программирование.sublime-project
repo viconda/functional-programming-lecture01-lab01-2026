@@ -1,0 +1,27 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "font_size": 13,
+    "translate_tabs_to_spaces": true
+  },
+  "build_systems": [
+    {
+      "name": "Python 3 UTF8",
+      "cmd": [
+        "C:\\Users\\shvac\\Documents\\Лабораторные\\Функциональное программирование\\Лекция 01 и лабораторная 01\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-u",
+        "$file"
+      ],
+      "working_dir": "$file_path",
+      "file_regex": "^  File \"(...*?)\", line ([0-9]*)",
+      "selector": "source.python",
+      "encoding": "utf-8"
+    }
+  ]
+}
